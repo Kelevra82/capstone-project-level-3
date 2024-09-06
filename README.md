@@ -6,7 +6,34 @@ git branch -M main
 git remote add origin https://github.com/Kelevra82/terrence-matte-multi-page-u19o74yobg184ym3roqiynqo0z6lbvqa305h.git
 curl -sS https://webi.sh/gh | sh
 gh auth login
+git push --set-upstream origin main
+
+//PUSHES CHANGES TO THE ORIGIN'S MAIN BRANCH AND SAVES THE PARAMETERS
 git push -u origin main
+
+//ADD CHANGES THAT WERE MADE TO THE README FILE
+git add README.md
+
+//ADD CHANGES THAT WERE MADE IN ALL FILES AND FOLDERS
+git add .
+
+//CREATE A SAVE POINT AND ATTACH A MEMO TO IT
+git commit -m "I added user info to readme"
+
+//SYNC CHANGES TO GITHUB
+git push
+
+//COPY THE FILES FROM GITHUB
+git pull --set-upstream origin main
+
+//
+git pull
+
+//VIEW THE VALUE OF ORIGIN
+git remote -v
+
+/ASSIGNS A URL TO THE ORIGIN VARIABLE
+
 
 //RENAMES THE CURRENT BRANCH TO MAIN
 git branch -M main
