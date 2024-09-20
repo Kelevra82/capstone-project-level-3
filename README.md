@@ -13,8 +13,6 @@ git push --set-upstream origin main
 
 
 
-//CREATES A NEW BRANCH
-git branch -M main
 
 //PUSHES CHANGES TO THE ORIGIN'S MAIN BRANCH AND SAVES THE PARAMETERS
 git push -u origin main
