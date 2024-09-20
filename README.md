@@ -10,6 +10,9 @@ curl -sS https://webi.sh/gh | sh
 gh auth login
 git push --set-upstream origin main
 
+
+git remote set-url origin
+
 //PUSHES CHANGES TO THE ORIGIN'S MAIN BRANCH AND SAVES THE PARAMETERS
 git push -u origin main
 
