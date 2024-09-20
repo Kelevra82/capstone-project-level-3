@@ -11,7 +11,10 @@ gh auth login
 git push --set-upstream origin main
 
 
-git remote set-url origin
+
+
+//CREATES A NEW BRANCH
+git branch -M main
 
 //PUSHES CHANGES TO THE ORIGIN'S MAIN BRANCH AND SAVES THE PARAMETERS
 git push -u origin main
@@ -37,10 +40,11 @@ git pull
 //VIEW THE VALUE OF ORIGIN
 git remote -v
 
-/ASSIGNS A URL TO THE ORIGIN VARIABLE
-
+//ASSIGNS A URL TO THE ORIGIN VARIABLE
+git remote set-url origin https://github.com/Kelevra82/terrence-matte-multi-page-u19o74yobg184ym3roqiynqo0z6lbvqa305h.git
 
 //RENAMES THE CURRENT BRANCH TO MAIN
 git branch -M main
 
-//GET THE CURRENT VERSION OF IT
+//GET THE CURRENT VERSION OF GIT
+git --version
