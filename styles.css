@@ -1,3 +1,9 @@
+body {
+  background-color: lightsteelblue;
+  font-size: 25px;
+}
+
+
 label {
   padding: 0px 5px 0px 5px;
 }
