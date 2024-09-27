@@ -15,7 +15,7 @@ git push --set-upstream origin main
 
 
 //PUSHES CHANGES TO THE ORIGIN'S MAIN BRANCH AND SAVES THE PARAMETERS
-git push -u origin main
+git
 
 //ADD CHANGES THAT WERE MADE TO THE README FILE
 git add README.md
