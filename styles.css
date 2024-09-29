@@ -1,10 +1,22 @@
 body {
-  background-color: lightsteelblue;
+  background-color:rgb(22, 98, 128);
   font-size: 25px;
 }
 
-
-
 label {
   padding: 0px 5px 0px 5px;
+  font-size: 20px;
+}
+
+.botsig {
+  text-align: center;
+}
+
+.card {
+  background-color:rgb(22, 98, 128);
+  width: 40vw;
+}
+
+.border-dashed {
+  border-style: dashed !important;
 }

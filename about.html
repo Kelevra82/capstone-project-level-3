@@ -8,7 +8,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
     <script src="utility-functions.js"></script>
   </head>
   <body class="container p-3">
@@ -18,109 +18,63 @@
         alt="Bounce House"
         src="https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/Main.jpg?v=1722495693093"
       />
-      <nav class="nav nav-pills nav-fill bg-black">
+      <nav class="nav nav-pills nav-fill bg-dark">
         <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link active" href="about.html">About</a>
         <a class="nav-link" href="contact.html">Contact</a>
       </nav>
     </header>
-    <hr />
+    <hr>
     <main id="mainTag">
-      <h1>Moe's City Bounce Rentals</h1>
+      <h1 class="text-black">Moe's City Bounce Rentals</h1>
       <br>
-      <h2>About Us</h2>
+      <h2 class="text-black">About Us</h2>
+      <p class="text-black fst-italic fs-6 fw-bold">Moe's City Bounce Rentals is a family-owned business. We have been<br> in business since 2010. We rent bounce houses for all of your needs.</p>
+      <br>
+        <script>
+          const card1 = {};
+          card1.src = "https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery1-multi-page.jpg?v=1722495698459";
+          card1.title = "Katapeed";
+          card1.description = "Katapeed is a classic, fun for everyone, not safe for anyone obstacle course.";
+  
+          const card2 = {};
+          card2.src = "https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery3-multi-page.jpg?v=1722495706942";
+          card2.title = "Peek-a-poo";
+          card2.description = "Another classic which comes with a net to trap the mosquitos inside, nowhere to hide.";
+  
+          const card3 = {};
+          card3.src = "https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery4-multi-page.jpg?v=1722495710133";
+          card3.title = "Bounce Around";
+          card3.description = "Bounce around in a circle or see who can make it to the middle first, you decide. If this doesn't bore you, you can always go back to the beginning.";        
+          
+          const card4 = {};
+          card4.src = "https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery5-multi-page.jpg?v=1722495712396";
+          card4.title = "Bump N Jump";
+          card4.description = "Bump and jump around in a circle or see who...NOPE. You can always go back to the beginning.";        
+          
+          const card5 = {};
+          card5.src = "https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery6-multi-page.jpg?v=1722495714809";
+          card5.title = "N/A";
+          card5.description = "N/A. You can always go back to the beginning.";        
+          
+          const card6 = {};
+          card6.src = "https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery2-multi-page.jpg?v=1722495701124";
+          card6.title = "Gargantuan...";
+          card6.description = "Slide up or down. You can always go back to the beginning.";
+  
+          debugger;
+          const cards = [card1, card2, card3, card4, card5, card6];
+          for (position = 0; position < cards.length; position++) {
+            const card = cards[position];
+            const cardString = convertCard(card);
+            mainTag.innerHTML += cardString;
+          }
+        </script>
 
-      <script>
-        const card1 = {};
-        card1.src = "https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery1-multi-page.jpg?v=1722495698459";
-        card1.title = "Scrambled Eggs";
-        card1.description = "Eggs cooked in a pan while stirring.";
-
-        const card2 = {};
-        card2.src = "https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery3-multi-page.jpg?v=1722495706942";
-        card2.title = "Pancakes";
-        card2.description = "Pancakes have a light and fluffy texture with a slightly crispy exterior.";
-
-        const card3 = {};
-        card3.src = "https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery4-multi-page.jpg?v=1722495710133";
-        card3.title = "Butter Toast";
-        card3.description = "Butter spread over golden brown, toasted slices of bread.";        
-        
-        const card4 = {};
-        card3.src = "https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery5-multi-page.jpg?v=1722495712396";
-        card3.title = "Butter Toast";
-        card3.description = "Butter spread over golden brown, toasted slices of bread.";        
-        
-        const card5 = {};
-        card3.src = "https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery6-multi-page.jpg?v=1722495714809";
-        card3.title = "Butter Toast";
-        card3.description = "Butter spread over golden brown, toasted slices of bread.";        
-        
-        const card6 = {};
-        card3.src = "https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery2-multi-page.jpg?v=1722495701124";
-        card3.title = "Butter Toast";
-        card3.description = "Butter spread over golden brown, toasted slices of bread.";
-
-        debugger;
-        const cards = [card1, card2, card3, card4, card5, card6];
-        for (position = 0; position < cards.length; position++) {
-          const card = cards[position];
-          const cardString = convertCard(card);
-          mainTag.innerHTML += cardString;
-        }
-      </script>
-
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <img
-              alt="Fun Jumps"
-              src="https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery1-multi-page.jpg?v=1722495698459"
-            />
-          </div>
-
-          <div class="col">
-            <img
-              alt="Fun Jumps"
-              src="https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery3-multi-page.jpg?v=1722495706942"
-            />
-          </div>
-
-          <div class="col">
-            <img
-              alt="Fun Jumps"
-              src="https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery4-multi-page.jpg?v=1722495710133"
-            />
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col">
-            <img
-              alt="Fun Jumps"
-              src="https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery5-multi-page.jpg?v=1722495712396"
-            />
-          </div>
-
-          <div class="col">
-            <img
-              alt="Fun Jumps"
-              src="https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery6-multi-page.jpg?v=1722495714809"
-            />
-          </div>
-
-          <div class="col">
-            <img
-              alt="Fun Jumps"
-              src="https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery2-multi-page.jpg?v=1722495701124"
-            />
-          </div>
-        </div>
-      </div>
     </main>
-    <br />
-    <hr />
-    <footer style="text-align: center; color: lightcoral">
+    <br>
+    <hr>
+    <footer class="botsig">
       <p><i>Website by me</i></p>
     </footer>
   </body>
