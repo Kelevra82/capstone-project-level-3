@@ -18,17 +18,14 @@ git add .
 //CREATE A SAVE POINT AND ATTACH A MEMO TO IT
 git commit -m "I added user info to readme"
 
+//SYNC CHANGES TO GITHUB
+git push origin main
 
 //PUSHES CHANGES TO THE ORIGIN'S MAIN BRANCH AND SAVES THE PARAMETERS
 git
 
 //ADD CHANGES THAT WERE MADE TO THE README FILE
 git add README.md
-
-
-
-//SYNC CHANGES TO GITHUB
-git push origin main
 
 //COPY THE FILES FROM GITHUB
 git pull --set-upstream origin main
