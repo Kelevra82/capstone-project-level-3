@@ -30,5 +30,6 @@ label {
 
 .navbtn {
   background-color: salmon;
-  border-color: lightgreen; 
+  border-color: lightgreen;
+  border-style: inset;
 }
