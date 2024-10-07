@@ -1,5 +1,5 @@
 body {
-  background-color:rgb(22, 98, 128);
+  background-color: rgb(22, 98, 128);
   font-size: 25px;
 }
 
@@ -12,10 +12,18 @@ label {
 }
 
 .card {
-  background-color:rgb(22, 98, 128);
+  background-color: rgb(22, 98, 128);
   width: 40vw;
 }
 
 .border-dashed {
   border-style: dashed !important;
+}
+
+.gspin {
+  color: rgb(22, 98, 128);
+}
+
+.navcolor {
+  background-color: #be823e;
 }
