@@ -27,3 +27,8 @@ label {
 .navcolor {
   background-color: #be823e;
 }
+
+.navbtn {
+  background-color: salmon;
+  border-color: lightgreen; 
+}
