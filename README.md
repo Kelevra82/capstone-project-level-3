@@ -19,10 +19,10 @@ git add .
 git commit -m "I added user info to readme"
 
 //SYNC CHANGES TO GITHUB
-git push origin main
+git push
 
 //PUSHES CHANGES TO THE ORIGIN'S MAIN BRANCH AND SAVES THE PARAMETERS
-git
+git push -u origin main
 
 //ADD CHANGES THAT WERE MADE TO THE README FILE
 git add README.md
