@@ -22,7 +22,11 @@ label {
 }
 
 .coninfo {
-font-family: fantasy;
+  font-family: sans-serif;
+  font-size: 50px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
 }
 
 
