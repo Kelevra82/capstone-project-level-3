@@ -1,11 +1,11 @@
-echo "# terrence-matte-multi-page-u19o74yobg184ym3roqiynqo0z6lbvqa305h" >> README.md
+echo "# capstone-project-level-2-n3gjfq69chvye49upkfmj20302su7j" >> README.md
 git init
 git add README.md
 git config user.name "kelevra82"
 git config user.email "tdmatte82@gmail.com"
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/Kelevra82/terrence-matte-multi-page-u19o74yobg184ym3roqiynqo0z6lbvqa305h.git
+git remote add origin https://github.com/Kelevra82/capstone-project-level-2-n3gjfq69chvye49upkfmj20302su7j.git
 curl -sS https://webi.sh/gh | sh
 gh auth login
 git push --set-upstream origin main
@@ -37,7 +37,7 @@ git pull
 git remote -v
 
 //ASSIGNS A URL TO THE ORIGIN VARIABLE
-git remote set-url origin https://github.com/Kelevra82/terrence-matte-multi-page-u19o74yobg184ym3roqiynqo0z6lbvqa305h.git
+git remote set-url origin https://github.com/Kelevra82/capstone-project-level-2-n3gjfq69chvye49upkfmj20302su7j.git
 
 //RENAMES THE CURRENT BRANCH TO MAIN
 git branch -M main
