@@ -8,7 +8,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="utility-functions.js"></script>
   </head>
   <body class="container p-3">
@@ -24,56 +24,69 @@
         <a class="nav-link" href="contact.html">Contact</a>
       </nav>
     </header>
-    <hr>
+    <hr />
     <main id="mainTag">
       <h1 class="coninfo">Moe's City Bounce Rentals</h1>
-      <br>
+      <br />
       <h2 class="text-center fs-2">About Us</h2>
-      <p class="text-center fst-italic fs-5">Moe's City Bounce Rentals is a family-owned business. We have been<br> in business since 2010. We rent bounce houses for all of your needs.</p>
-      <br>
-        <script>
-          const card1 = {};
-          card1.src = "https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery1-multi-page.jpg?v=1722495698459";
-          card1.title = "Katapeed";
-          card1.description = "Katapeed is a classic, fun for everyone, not safe for anyone obstacle course.";
-  
-          const card2 = {};
-          card2.src = "https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery3-multi-page.jpg?v=1722495706942";
-          card2.title = "Peek-a-poo";
-          card2.description = "Another classic which comes with a net to trap the mosquitos inside, nowhere to hide.";
-  
-          const card3 = {};
-          card3.src = "https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery4-multi-page.jpg?v=1722495710133";
-          card3.title = "Bounce Around";
-          card3.description = "Bounce around in a circle or see who can make it to the middle first, you decide. If this doesn't bore you, you can always go back to the beginning.";        
-          
-          const card4 = {};
-          card4.src = "https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery5-multi-page.jpg?v=1722495712396";
-          card4.title = "Bump N Jump";
-          card4.description = "Bump and jump around in a circle or see who...NOPE. You can always go back to the beginning.";        
-          
-          const card5 = {};
-          card5.src = "https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery6-multi-page.jpg?v=1722495714809";
-          card5.title = "N/A";
-          card5.description = "N/A. You can always go back to the beginning.";        
-          
-          const card6 = {};
-          card6.src = "https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery2-multi-page.jpg?v=1722495701124";
-          card6.title = "Gargantuan...";
-          card6.description = "Slide up or down. You can always go back to the beginning.";
-  
-          debugger;
-          const cards = [card1, card2, card3, card4, card5, card6];
-          for (position = 0; position < cards.length; position++) {
-            const card = cards[position];
-            const cardString = convertCard(card);
-            mainTag.innerHTML += cardString;
-          }
-        </script>
+      <p class="text-center fst-italic fs-5">
+        Moe's City Bounce Rentals is a family-owned business. We have been<br />
+        in business since 2010. We rent bounce houses for all of your needs.
+      </p>
+      <br />
+      <script>
+        const card1 = {};
+        card1.src =
+          "https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery1-multi-page.jpg?v=1722495698459";
+        card1.title = "Katapeed";
+        card1.description =
+          "Katapeed is a classic, fun for everyone, not safe for anyone obstacle course.";
 
+        const card2 = {};
+        card2.src =
+          "https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery3-multi-page.jpg?v=1722495706942";
+        card2.title = "Peek-a-poo";
+        card2.description =
+          "Another classic which comes with a net to trap the mosquitos inside, nowhere to hide.";
+
+        const card3 = {};
+        card3.src =
+          "https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery4-multi-page.jpg?v=1722495710133";
+        card3.title = "Bounce Around";
+        card3.description =
+          "Bounce around in a circle or see who can make it to the middle first, you decide. If this doesn't bore you, you can always go back to the beginning.";
+
+        const card4 = {};
+        card4.src =
+          "https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery5-multi-page.jpg?v=1722495712396";
+        card4.title = "Bump N Jump";
+        card4.description =
+          "Bump and jump around in a circle or see who...NOPE. You can always go back to the beginning.";
+
+        const card5 = {};
+        card5.src =
+          "https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery6-multi-page.jpg?v=1722495714809";
+        card5.title = "N/A";
+        card5.description = "N/A. You can always go back to the beginning.";
+
+        const card6 = {};
+        card6.src =
+          "https://cdn.glitch.global/77a79a80-a9e9-4d28-81cd-e53e08809f72/gallery2-multi-page.jpg?v=1722495701124";
+        card6.title = "Gargantuan...";
+        card6.description =
+          "Slide up or down. You can always go back to the beginning.";
+
+        debugger;
+        const cards = [card1, card2, card3, card4, card5, card6];
+        for (position = 0; position < cards.length; position++) {
+          const card = cards[position];
+          const cardString = convertCard(card);
+          mainTag.innerHTML += cardString;
+        }
+      </script>
     </main>
-    <br>
-    <hr>
+    <br />
+    <hr />
     <footer class="botsig fs-5">
       <p style="color: black"><i>Website by me</i></p>
     </footer>

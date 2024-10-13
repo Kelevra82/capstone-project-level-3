@@ -14,7 +14,7 @@ INSTALL GITHUB CLI
 3. Choose default options.
 4. Reload VS Code to apply changes.
 
-CONFIGURE USER NAME 
+CONFIGURE USER NAME
 
 1. git init
 2. Run the command git config user.name
