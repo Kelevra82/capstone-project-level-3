@@ -13,8 +13,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
     <script src="utility-functions.js"></script>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body class="container p-3">
@@ -30,119 +31,99 @@
         <a class="nav-link active" href="contact.html">Contact</a>
       </nav>
     </header>
-    <hr />
+    <hr>
 
     <main>
       <h1 class="coninfo"><span>Moe's City Bounce Rentals</span></h1>
-      <br />
+      <br>
       <div class="container m-3 text-center">
-        <span
-          class="alert alert-black bg-dark border border-3 border-info rounded-pill text-primary fs-5 alert-dismissible"
-        >
+        <span class="alert alert-black bg-dark border border-3 border-info rounded-pill text-primary fs-5 alert-dismissible">
           <span class="spinner-grow text-success"></span>
           Check out our featured products.
-          <span class="badge bg-danger text-dark fs-6 rounded-pill"
-            >20% OFF</span
-          >
+          <span class="badge bg-danger text-dark fs-6 rounded-pill">20% OFF</span>
           <button class="btn-close" data-bs-dismiss="alert"></button>
         </span>
       </div>
-      <br />
+      <br>
 
       <h2 class="text-center">Contact Us!</h2>
       <div class="container text-center">
         <div class="row">
+          
           <div class="col">
             <form>
               <ul class="list-group m-5 p-5 fs-5">
-                <li
-                  class="container list-group-item text-primary bg-dark border-dashed border-dark"
-                >
-                  <label for="name">Name:</label><br />
+                <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
+                  <label for="name">Name:</label><br>
                 </li>
-                <li
-                  class="container list-group-item text-primary bg-dark border-dashed border-dark"
-                >
-                  <input type="text" id="name" /><br />
+                
+                <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
+                  <input type="text" id="name"><br>
                 </li>
-                <li
-                  class="container list-group-item text-primary bg-dark border-dashed border-dark"
-                >
-                  <label for="email">Email:</label><br />
+                
+                <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
+                  <label for="email">Email:</label><br>
                 </li>
-                <li
-                  class="container list-group-item text-primary bg-dark border-dashed border-dark"
-                >
-                  <input type="text" id="email" /><br />
+                
+                <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
+                  <input type="text" id="email"><br>
                 </li>
-                <li
-                  class="container list-group-item text-primary bg-dark border-dashed border-dark"
-                >
-                  <label for="comments">Comments:</label><br />
+                
+                <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
+                  <label for="comments">Comments:</label><br>
                 </li>
-                <li
-                  class="container list-group-item text-primary bg-dark border-dashed border-dark"
-                >
-                  <textarea id="comments"></textarea><br />
+                
+                <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
+                  <textarea id="comments"></textarea><br>
                 </li>
-                <li
-                  class="container list-group-item text-primary bg-dark border-dashed border-dark"
-                >
-                  <button onclick="submitBtn()" class="btn btn-sm btn-primary">
-                    Submit
-                  </button>
-                </li>
+                
+                <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
+                  <button onclick="submitBtn()" class="btn btn-sm btn-primary">Submit</button>
+                </li>              
               </ul>
             </form>
           </div>
-          <div class="col">
+          
+          <div class="col container">
             <ul class="list-group m-5 p-5 fs-5">
-              <li
-                class="container list-group-item text-primary bg-dark border-dashed border-dark"
-              >
-                Don Lee
-              </li>
-              <li
-                class="container list-group-item text-primary bg-dark border-dashed border-dark"
-              >
-                555-555-5555
-              </li>
-              <li
-                class="container list-group-item text-primary bg-dark border-dashed border-dark"
-              >
-                9qHg8@example.com
-              </li>
+              <li class="container list-group-item text-primary bg-dark border-dashed border-dark">Don Lee</li>
+              <li class="container list-group-item text-primary bg-dark border-dashed border-dark">555-555-5555</li>
+              <li class="container list-group-item text-primary bg-dark border-dashed border-dark">9qHg8@example.com</li>
             </ul>
-          </div>
+
+            <h3>Reserve Now</h3>
+
+            <img class="card-img" src="images\select-state.png" usemap="#image-map" alt="Choose Your State">
+            <map name="image-map">
+                <area title="Alabama" coords="197,2, 294,2, 325,136, 323,198, 215,200, 223,228, 210,238, 183,230, 178,157" shape="poly" target="_blank" href="https://en.wikipedia.org/wiki/Alabama">
+
+                <area title="Mississippi" coords="102,2, 189,2, 193,8, 175,155, 177,232, 130,240, 113,200, 41,195, 63,141, 66,66" shape="poly" target="_blank" href="https://en.wikipedia.org/wiki/Mississippi">
+            </map>
+          </div>        
         </div>
       </div>
       <div id="outputTag"></div>
-    </main>
-    <br />
+
+      <script>
+        imageMapResize();
+      </script>
+
+    </main><br>
 
     <footer class="botsig fs-5">
       <form>
         <p>Rate us!</p>
-        <input id="1star" type="radio" name="stars" /><label
-          for="1star"
-          class="ps-2 pe-2"
-          >1 star</label
-        >
-        <input id="2stars" type="radio" name="stars" /><label
-          for="2stars"
-          class="ps-2 pe-2"
-          >2 stars</label
-        >
-        <input id="3stars" type="radio" name="stars" /><label
-          for="3stars"
-          class="ps-2 pe-2"
-          >3 stars</label
-        >
+        <input id="1star" type="radio" name="stars">
+        <label for="1star" class="ps-2 pe-2">1 star</label>
+        <input id="2stars" type="radio" name="stars">
+        <label for="2stars" class="ps-2 pe-2">2 stars</label>
+        <input id="3stars" type="radio" name="stars">
+        <label for="3stars" class="ps-2 pe-2">3 stars</label>
       </form>
-      <br />
-      <hr />
-
+      <br>
+      <hr>
       <p><i>Website by me</i></p>
     </footer>
+    
   </body>
 </html>
