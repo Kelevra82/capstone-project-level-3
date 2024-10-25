@@ -15,6 +15,7 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
     <script src="utility-functions.js"></script>
+    <script src="forms.js"></script>
     <link rel="stylesheet" href="styles.css">
   </head>
 
@@ -43,45 +44,54 @@
           <span class="badge bg-danger text-dark fs-6 rounded-pill">20% OFF</span>
           <button class="btn-close" data-bs-dismiss="alert"></button>
         </span>
-      </div>
-      <br>
+      </div><br>
 
       <h2 class="text-center">Contact Us!</h2>
       <div class="container text-center">
         <div class="row">
           
           <div class="col">
-            <form>
+            <form onsubmit="myProcessForm(event)">
               <ul class="list-group m-5 p-5 fs-5">
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <label for="name">Name:</label><br>
-                </li>
-                
+                </li>                
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
-                  <input type="text" id="name"><br>
+                  <input 
+                    required 
+                    type="text"
+                    name="name" 
+                    id="name"
+                    placeholder="Enter your name"
+                  /><br>
                 </li>
                 
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <label for="email">Email:</label><br>
-                </li>
-                
+                </li>                
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
-                  <input type="text" id="email"><br>
+                  <input 
+                    required 
+                    type="email" 
+                    id="email"
+                    placeholder="example@email.com"
+                  /><br>
                 </li>
                 
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <label for="comments">Comments:</label><br>
-                </li>
-                
+                </li>                
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <textarea id="comments"></textarea><br>
                 </li>
                 
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
-                  <button onclick="submitBtn()" class="btn btn-sm btn-primary">Submit</button>
-                </li>              
+                  <button type="submit" class="btn btn-sm btn-primary">Submit</button>
+                </li>
+
+                  <ul id="outputTag" class="list-group-item text-primary bg-dark border-dark"></ul>
               </ul>
-            </form>
+            </form>            
           </div>
           
           <div class="col container">
@@ -102,7 +112,7 @@
           </div>        
         </div>
       </div>
-      <div id="outputTag"></div>
+      
 
       <script>
         imageMapResize();
