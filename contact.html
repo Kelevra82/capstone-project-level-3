@@ -94,17 +94,9 @@
 
                   <ul id="outputTag" class="list-group-item text-primary bg-dark border-dark"></ul>
               </ul>
-            </form>            
-          </div>
-          
-          <div class="col container">
-            <ul class="list-group m-5 p-5 fs-5">
-              <li class="container list-group-item text-primary bg-dark border-dashed border-dark">Don Lee</li>
-              <li class="container list-group-item text-primary bg-dark border-dashed border-dark">555-555-5555</li>
-              <li class="container list-group-item text-primary bg-dark border-dashed border-dark">9qHg8@example.com</li>
-            </ul>
+            </form>
             
-            <form>
+            <form onsubmit="scheduleCall(event)">
               <ul class="list-group m-5 p-5 fs-5">
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <label for="name">Name:</label><br>
@@ -126,7 +118,7 @@
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <input required type="date" id="date" name="date" class="text-center"></input><br>
                 </li>
-
+                
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <label for="time">Time:</label><br>
                 </li>                
@@ -136,10 +128,19 @@
                 
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <button type="submit" class="btn btn-sm btn-primary">Schedule Reservation</button>
-                </li>                              
+                </li>
+                  <ul id="outputTag" class="list-group-item text-primary bg-dark border-dark"></ul>              
               </ul>
             </form>
-
+          </div>
+          
+          <div class="col container">
+            <ul class="list-group m-5 p-5 fs-5">
+              <li class="container list-group-item text-primary bg-dark border-dashed border-dark">Don Lee</li>
+              <li class="container list-group-item text-primary bg-dark border-dashed border-dark">555-555-5555</li>
+              <li class="container list-group-item text-primary bg-dark border-dashed border-dark">9qHg8@example.com</li>
+            </ul>
+            
             <h3>Reserve Now</h3>
 
             <img class="card-img" src="images\select-state.png" usemap="#image-map" alt="Choose Your State">
@@ -151,7 +152,6 @@
           </div>        
         </div>
       </div>
-      
 
       <script>
         imageMapResize();
