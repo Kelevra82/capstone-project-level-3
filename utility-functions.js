@@ -13,3 +13,7 @@ function convertCard(cardObject) {
     const msgSent = "Your message has been sent!";
       window.outputTag.innerHTML += msgSent;
     }
+
+    function output(message) {
+      outputTag.innerHTML += message;
+  }

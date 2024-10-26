@@ -15,6 +15,7 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
     <script src="utility-functions.js"></script>
+    <script src="forms.js"></script>
     <link rel="stylesheet" href="styles.css">
   </head>
 
@@ -55,24 +56,21 @@
               <ul class="list-group m-5 p-5 fs-5">
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <label for="name">Name:</label><br>
-                </li>
-                
+                </li>                
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <input type="text" id="name"><br>
                 </li>
                 
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <label for="email">Email:</label><br>
-                </li>
-                
+                </li>                
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <input type="text" id="email"><br>
                 </li>
                 
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <label for="comments">Comments:</label><br>
-                </li>
-                
+                </li>                
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <textarea id="comments"></textarea><br>
                 </li>
@@ -90,6 +88,42 @@
               <li class="container list-group-item text-primary bg-dark border-dashed border-dark">555-555-5555</li>
               <li class="container list-group-item text-primary bg-dark border-dashed border-dark">9qHg8@example.com</li>
             </ul>
+            
+            <form>
+              <ul class="list-group m-5 p-5 fs-5">
+                <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
+                  <label for="name">Name:</label><br>
+                </li>                
+                <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
+                  <input required type="text" id="name" name="name" placeholder="Enter your name" class="text-center"><br>
+                </li>
+                
+                <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
+                  <label for="phone">Phone #:</label><br>
+                </li>                
+                <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
+                  <input required type="tel" id="phone" name="phone" placeholder="###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="text-center"><br>
+                </li>
+                
+                <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
+                  <label for="date">Date:</label><br>
+                </li>                
+                <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
+                  <input required type="date" id="date" name="date" class="text-center"></input><br>
+                </li>
+
+                <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
+                  <label for="time">Time:</label><br>
+                </li>                
+                <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
+                  <input required type="time" id="time" name="time" class="text-center"></input><br>
+                </li>
+                
+                <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
+                  <button type="submit" class="btn btn-sm btn-primary">Schedule Reservation</button>
+                </li>                              
+              </ul>
+            </form>
 
             <h3>Reserve Now</h3>
 
@@ -102,7 +136,7 @@
           </div>        
         </div>
       </div>
-      <div id="outputTag"></div>
+
 
       <script>
         imageMapResize();
