@@ -1,0 +1,45 @@
+$bg-color: rgb(22, 98, 128);
+$primaryTextColor: rgb(0, 0, 0);
+$primaryFont: "Exo2";
+
+@font-face {
+    font-family: "Exo2";
+    src: url("fonts/exo2-regular.otf");
+}
+
+
+body {
+    background-color: $bg-color;
+    font-family: $primaryFont;
+    font-size: 25px;
+    color: $primaryTextColor;
+}
+
+h2:hover {
+    color: rgba(255, 166, 0, 0.705);
+}
+
+label {
+    font-size: 20px;
+}
+
+.botsig {
+    text-align: center;
+}
+
+.card {
+    background-color: $bg-color;
+    width: 40vw;
+}
+
+.border-dashed {
+    border-style: dashed !important;
+}
+
+.coninfo {
+    font-family: $primaryFont;
+    font-size: 50px;
+    color: $primaryTextColor;
+    text-align: center;
+    font-weight: bold;
+}
