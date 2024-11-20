@@ -2,13 +2,34 @@
   font-family: "Exo2";
   src: url("fonts/Exo2-Regular.otf");
 }
+#animate-badge {
+  transform: scale(1) rotate(0deg);
+  transition: transform 1s;
+}
+#animate-badge:hover {
+  transform: scale(0.5) rotate(-10deg);
+  transition: transform 2s;
+}
+
+#button-shadow {
+  box-shadow: 3px 3px rgba(21, 144, 192, 0.925);
+}
+
 body {
-  background-color: rgb(22, 98, 128);
+  background-color: rgb(31, 134, 175);
+  background-image: linear-gradient(rgb(13, 56, 61), rgb(34, 134, 175), rgb(13, 56, 61));
   font-family: "Exo2";
   font-size: 25px;
   color: rgb(0, 0, 0);
 }
 
+article h2 {
+  text-shadow: 3px 3px rgb(48, 69, 83);
+}
+
+h2 {
+  width: fit-content;
+}
 h2:hover {
   color: rgba(255, 166, 0, 0.705);
 }
@@ -17,12 +38,16 @@ label {
   font-size: 20px;
 }
 
+.opacity75 {
+  opacity: 0.75;
+}
+
 .botsig {
   text-align: center;
 }
 
 .card {
-  background-color: rgb(22, 98, 128);
+  background-color: rgb(31, 134, 175);
   width: 40vw;
 }
 
