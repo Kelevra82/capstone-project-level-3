@@ -21,3 +21,11 @@ function output1(message) {
 function output2(message) {
   outputTag2.innerHTML += message;
 }
+
+function formProcessing(message) {
+  formProcessingTag1.innerHTML += message;
+}
+
+function formProcessed(message) {
+  formProcessedTag1.innerHTML += message;
+}

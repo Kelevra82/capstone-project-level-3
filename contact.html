@@ -50,7 +50,7 @@
         <div class="row">
           
           <div class="col">
-            <form onsubmit="myProcessForm(event)">
+            <form onsubmit="handleSubmit(event)">
               <ul class="list-group m-5 p-5 fs-5">
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <label for="name">Name:</label><br>
@@ -91,7 +91,8 @@
                   <button type="submit" class="btn btn-sm btn-primary" id="button-shadow">Submit</button>
                 </li>
 
-                  <ul id="outputTag1" class="list-group-item text-primary bg-dark border-dark"></ul>
+                  <ul id="formProcessingTag1" class="list-group-item text-primary bg-dark border-dark"></ul>
+                  <ul id="formProcessedTag1" class="list-group-item text-primary bg-dark border-dark"></ul>
               </ul>
             </form>
             

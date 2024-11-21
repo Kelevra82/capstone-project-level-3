@@ -23,3 +23,35 @@ function scheduleCall(event) {
     const datetime = `${date} at ${time}`;
     output2(`Thank you ${name} for scheduling a reservation! Phone call scheduled for ${datetime} at ${phone}.<br>`);
 }
+
+function handleSubmit(event) {
+    debugger;
+    event.preventDefault();
+    const inputs = event.target;
+    const emailInput = inputs[0];
+    const email = emailInput.value;
+    formProcessing("Form submitted with email: " + email + "...");
+    const promise = new Promise(getServerResponse);
+    promise.then(parseResponse);
+}
+
+function getServerResponse(resolve) {
+    setTimeout(activateResolve, 5000);
+
+    function activateResolve() {
+        debugger;
+        const response = {
+            message: "Successfully processed.",
+        };
+        const resolveValue = JSON.stringify(response);
+        resolve(resolveValue);
+    }
+
+}
+
+function parseResponse(resolveValue) {
+    debugger;
+    const response = JSON.parse(resolveValue);
+    const message = response.message;
+    formProcessed(message);
+}
