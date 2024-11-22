@@ -22,10 +22,10 @@ function output2(message) {
   outputTag2.innerHTML += message;
 }
 
-function formProcessing(message) {
+function formProcessing1(message) {
   formProcessingTag1.innerHTML += message;
 }
 
-function formProcessed(message) {
+function formProcessed1(message) {
   formProcessedTag1.innerHTML += message;
 }

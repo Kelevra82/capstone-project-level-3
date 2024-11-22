@@ -28,9 +28,11 @@ function handleSubmit(event) {
     debugger;
     event.preventDefault();
     const inputs = event.target;
-    const emailInput = inputs[0];
+    const nameInput = inputs[0];
+    const emailInput = inputs[1];
+    const name = nameInput.value;
     const email = emailInput.value;
-    formProcessing("Form submitted with email: " + email + "...");
+    formProcessing1("Please wait while we process your request with Name: " + name + " and Email: " + email + "...");
     const promise = new Promise(getServerResponse);
     promise.then(parseResponse);
 }
@@ -53,5 +55,5 @@ function parseResponse(resolveValue) {
     debugger;
     const response = JSON.parse(resolveValue);
     const message = response.message;
-    formProcessed(message);
+    formProcessed1(message);
 }
