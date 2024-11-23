@@ -42,6 +42,7 @@ function getServerResponse(resolve) {
 
     function activateResolve() {
         debugger;
+        //SIMULATE A SERVER RESPONSE BY SENDING A STRINGIFIED OBJECT
         const response = {
             message: "Successfully processed.",
         };
