@@ -8,20 +8,9 @@ function convertCard(cardObject) {
   cardString += '</div>';
   return cardString;
 }
-
-function submitBtn() {
-  const msgSent = "Your message has been sent!";
-  window.outputTag.innerHTML += msgSent;
-}
-
 function output1(message) {
   outputTag1.innerHTML += message;
 }
-
-function output2(message) {
-  outputTag2.innerHTML += message;
-}
-
 function formProcessing1(message) {
   formProcessingTag1.innerHTML += message;
 }
