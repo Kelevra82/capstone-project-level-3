@@ -7,8 +7,8 @@
   transition: transform 1s;
 }
 #animate-badge:hover {
-  transform: scale(0.5) rotate(-10deg);
-  transition: transform 2s;
+  transform: scale(1.5) rotate(-360deg);
+  transition: transform 0s;
 }
 
 #button-shadow {
