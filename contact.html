@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
   </head>
-
   <body class="container p-3">
     <header>
       <img
@@ -33,7 +32,6 @@
         <a class="nav-link active" href="contact.html">Contact</a>
       </nav>
     </header><br>
-
     <main>
       <h1 class="coninfo"><span>Moe's City Bounce Rentals</span></h1>
       <br>
@@ -45,121 +43,100 @@
           <button class="btn-close" data-bs-dismiss="alert"></button>
         </span>
       </div><br>
-
       <h2 class="text-center">Contact Us!</h2>
       <div class="container text-center">
         <div class="row">
-          
           <div class="col">
             <form onsubmit="handleSubmit(event)">
               <ul class="list-group m-5 p-5 fs-5">
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <label for="name">Name:</label><br>
-                </li>                
-                </li>                
+                </li>
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
-                  <input 
-                    required 
+                  <input
+                    required
                     type="text"
-                    name="name" 
+                    name="name"
                     id="name"
                     placeholder="Enter your name"
                   /><br>
                 </li>
-                
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <label for="email">Email:</label><br>
-                </li>                
-                </li>                
+                </li>
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
-                  <input 
-                    required 
-                    type="email" 
+                  <input
+                    required
+                    type="email"
                     id="email"
                     placeholder="example@email.com"
                   /><br>
                 </li>
-                
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <label for="comments">Comments:</label><br>
-                </li>                
                 </li>                
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <textarea id="comments"></textarea><br>
                 </li>
-                
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <button type="submit" class="btn btn-sm btn-primary" id="button-shadow">Submit</button>
                 </li>
-
                   <ul id="formProcessingTag1" class="list-group-item text-primary bg-dark border-dark"></ul>
                   <ul id="formProcessedTag1" class="list-group-item text-primary bg-dark border-dark"></ul>
               </ul>
             </form>
-            
             <form onsubmit="handleScheduleCall(event)">
               <ul class="list-group m-5 p-5 fs-5">
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <label for="name">Name:</label><br>
-                </li>                
+                </li>
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <input required type="text" id="name" name="name" placeholder="Enter your name" class="text-center"><br>
                 </li>
-                
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <label for="phone">Phone #:</label><br>
-                </li>                
+                </li>
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <input required type="tel" id="phone" name="phone" placeholder="###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="text-center"><br>
                 </li>
-                
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <label for="date">Date:</label><br>
-                </li>                
+                </li>
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <input required type="date" id="date" name="date" class="text-center"></input><br>
                 </li>
-                
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <label for="time">Time:</label><br>
-                </li>                
+                </li>
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <input required type="time" id="time" name="time" class="text-center"></input><br>
                 </li>
-                
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <button type="submit" class="btn btn-sm btn-primary">Schedule Reservation</button>
                 </li>
-                  <ul id="outputTag1" class="list-group-item text-primary bg-dark border-dark"></ul>              
+                  <ul id="outputTag1" class="list-group-item text-primary bg-dark border-dark"></ul>
               </ul>
             </form>
           </div>
-          
           <div class="col container">
             <ul class="list-group m-5 p-5 fs-5">
               <li class="container list-group-item text-primary bg-dark border-dashed border-dark">Don Lee</li>
               <li class="container list-group-item text-primary bg-dark border-dashed border-dark">555-555-5555</li>
               <li class="container list-group-item text-primary bg-dark border-dashed border-dark">9qHg8@example.com</li>
             </ul>
-
             <h3>Reserve Now</h3>
-
             <img class="card-img" src="images\select-state.png" usemap="#image-map" alt="Choose Your State">
             <map name="image-map">
                 <area title="Alabama" coords="147,1, 220,2, 242,103, 241,150, 160,150, 166,170, 152,178, 135,171, 133,117" shape="poly" target="_blank" href="https://en.wikipedia.org/wiki/Alabama">
-
                 <area title="Mississippi" coords="142,1, 144,5, 131,115, 133,173, 96,178, 84,147, 29,146, 50,92, 48,46, 80,1" shape="poly" target="_blank" href="https://en.wikipedia.org/wiki/Mississippi">
             </map>
-          </div>        
+          </div>      
         </div>
       </div>
-
       <script>
         imageMapResize();
       </script>
-
     </main><br>
-
     <footer class="botsig fs-5">
       <form>
         <p>Rate us!</p>
@@ -174,6 +151,5 @@
       <hr>
       <p><i>Website by me</i></p>
     </footer>
-    
   </body>
 </html>
