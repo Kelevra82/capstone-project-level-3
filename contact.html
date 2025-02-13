@@ -14,8 +14,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
-    <script src="controllers/handleSubmit.js" type="module"></script>
-    <script src="controllers/handleScheduleCall.js" type="module"></script>
+    <script src="./src/controllers/handleSubmit.js" type="module"></script>
+    <script src="./src/controllers/handleScheduleCall.js" type="module"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
   </head>
@@ -24,7 +24,7 @@
       <img
         width="100%"
         alt="Bounce House"
-        src="images\header.nav.jpg"
+        src="./assets/images/header-nav.jpg"
       />
       <nav class="nav nav-pills nav-fill bg-dark">
         <a class="nav-link" href="index.html">Home</a>
@@ -36,7 +36,7 @@
       <h1 class="coninfo"><span>Moe's City Bounce Rentals</span></h1>
       <br>
       <div class="container m-3 text-center">
-        <span class="alert alert-black bg-dark border border-3 border-info rounded-pill text-primary fs-5 alert-dismissible">
+        <span class="alert d-inline-block alert-black bg-dark border border-3 border-info rounded-pill text-primary fs-5 alert-dismissible">
           <span class="spinner-grow text-success"></span>
           Check out our featured products.
           <span class="badge bg-danger text-dark fs-6 rounded-pill" id="animate-badge">20% OFF</span>
@@ -47,44 +47,47 @@
       <div class="container text-center">
         <div class="row">
           <div class="col">
-            <form onsubmit="handleSubmit(event)">
-              <ul class="list-group m-5 p-5 fs-5">
-                <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
-                  <label for="name">Name:</label><br>
-                </li>
-                <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
-                  <input
-                    required
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Enter your name"
-                  /><br>
-                </li>
-                <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
-                  <label for="email">Email:</label><br>
-                </li>
-                <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
-                  <input
-                    required
-                    type="email"
-                    id="email"
-                    placeholder="example@email.com"
-                  /><br>
-                </li>
-                <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
-                  <label for="comments">Comments:</label><br>
-                </li>                
-                <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
-                  <textarea id="comments"></textarea><br>
-                </li>
-                <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
-                  <button type="submit" class="btn btn-sm btn-primary" id="button-shadow">Submit</button>
-                </li>
-                  <ul id="formProcessingTag1" class="list-group-item text-primary bg-dark border-dark"></ul>
-                  <ul id="formProcessedTag1" class="list-group-item text-primary bg-dark border-dark"></ul>
-              </ul>
-            </form>
+            <div>
+              <form onsubmit="handleSubmit(event)" class="d-inline-block">
+                <ul class="list-group m-5 p-5 fs-5">
+                  <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
+                    <label for="name">Name:</label><br>
+                  </li>
+                  <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
+                    <input
+                      required
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Enter your name"
+                    /><br>
+                  </li>
+                  <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
+                    <label for="email">Email:</label><br>
+                  </li>
+                  <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
+                    <input
+                      required
+                      type="email"
+                      id="email"
+                      placeholder="example@email.com"
+                    /><br>
+                  </li>
+                  <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
+                    <label for="comments">Comments:</label><br>
+                  </li>                
+                  <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
+                    <textarea id="comments"></textarea><br>
+                  </li>
+                  <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
+                    <button type="submit" class="btn btn-sm btn-primary" id="button-shadow">Submit</button>
+                  </li>
+                    <output id="emailFormProcessingTag" class="list-group-item text-primary bg-dark border-dark"></output>
+                    <output id="emailFormProcessedTag" class="list-group-item text-primary bg-dark border-dark"></output>
+                </ul>
+              </form>
+            </div>
+            
             <form onsubmit="handleScheduleCall(event)">
               <ul class="list-group m-5 p-5 fs-5">
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
@@ -114,7 +117,7 @@
                 <li class="container list-group-item text-primary bg-dark border-dashed border-dark">
                   <button type="submit" class="btn btn-sm btn-primary">Schedule Reservation</button>
                 </li>
-                  <ul id="outputTag1" class="list-group-item text-primary bg-dark border-dark"></ul>
+                  <output id="scheduleFormTag" class="list-group-item text-primary bg-dark border-dark"></output>
               </ul>
             </form>
           </div>

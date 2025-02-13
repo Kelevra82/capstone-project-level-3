@@ -3,91 +3,95 @@ $bg-color: rgba(31, 134, 175, 1);
 $primaryTextColor: rgba(0, 0, 0, 1);
 $hoverTextColor: rgba(255, 166, 0, 0.705);
 
-$bg-gradient: linear-gradient(rgba(13, 56, 61, 1), rgba(34, 134, 175, 1), rgba(13, 56, 61, 1));
+$bg-gradient: linear-gradient(
+  rgba(13, 56, 61, 1),
+  rgba(34, 134, 175, 1),
+  rgba(13, 56, 61, 1)
+);
 $primaryFont: "Exo2";
 
 // CUSTOM FONT
 @font-face {
-    font-family: "Exo2";
-    src: url("fonts/Exo2-Regular.otf");
+  font-family: "Exo2";
+  src: url("fonts/Exo2-Regular.otf");
 }
 
 // MIXINS
 @mixin boxShadow {
-    box-shadow: 3px 3px rgba(21, 144, 192, 0.925);
+  box-shadow: 3px 3px rgba(21, 144, 192, 0.925);
 }
 
 @mixin textShadow {
-    text-shadow: 3px 3px rgb(48, 69, 83);
+  text-shadow: 3px 3px rgb(48, 69, 83);
 }
 
 @mixin animation {
-    transform: scale(1) rotate(0deg);
-    transition: transform 1s; 
-    
-    &:hover {
-        transform: scale(1.5) rotate(-360deg);
-        transition: transform 0s;
-    }
+  transform: scale(1) rotate(0deg);
+  transition: transform 1s;
+
+  &:hover {
+    transform: scale(1.5) rotate(-360deg);
+    transition: transform 0s;
+  }
 }
 
 #animate-badge {
-    @include animation;
+  @include animation;
 }
 
 #button-shadow {
-    @include boxShadow;
+  @include boxShadow;
 }
 
 body {
-    background-color: $bg-color;
-    background-image: $bg-gradient;
-    font-family: $primaryFont;
-    font-size: 25px;
-    color: $primaryTextColor;
+  background-color: $bg-color;
+  background-image: $bg-gradient;
+  font-family: $primaryFont;
+  font-size: 25px;
+  color: $primaryTextColor;
 }
 
 // NESTING SYNTAX
 article {
-    h2 {
-        @include textShadow;
-    }
+  h2 {
+    @include textShadow;
+  }
 }
 
 // PARENT SYNTAX
 h2 {
-    width: fit-content;
-    
-    &:hover {
-        color: $hoverTextColor;
-    }
+  width: fit-content;
+
+  &:hover {
+    color: $hoverTextColor;
+  }
 }
 
 label {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .opacity75 {
-    opacity: 0.75;
+  opacity: 0.75;
 }
 
 .botsig {
-    text-align: center;
+  text-align: center;
 }
 
 .card {
-    background-color: $bg-color;
-    width: 40vw;
+  background-color: $bg-color;
+  width: 40vw;
 }
 
 .border-dashed {
-    border-style: dashed !important;
+  border-style: dashed !important;
 }
 
 .coninfo {
-    font-family: $primaryFont;
-    font-size: 50px;
-    color: $primaryTextColor;
-    text-align: center;
-    font-weight: bold;
+  font-family: $primaryFont;
+  font-size: 50px;
+  color: $primaryTextColor;
+  text-align: center;
+  font-weight: bold;
 }
