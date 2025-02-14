@@ -3,6 +3,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router";
 import { Home } from "./Views/Home";
 import { About } from "./Views/About";
+import { Contact } from "./Views/Contact";
 
 const root = createRoot(window.bodyTag);
 root.render(
@@ -11,7 +12,7 @@ root.render(
       <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
       <Route path="/about" element={<About />} />
-      {/* <Route path="" element={<Contact />} /> */}
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   </BrowserRouter>
 );

@@ -2011,8 +2011,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ "./src/Views/Navbar.js");
-/* harmony import */ var _Cards__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Cards */ "./src/Views/Cards.js");
-
 
 
 function About() {
@@ -2023,35 +2021,16 @@ function About() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__.Navbar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
     id: "mainTag"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    class: "coninfo"
+    className: "coninfo"
   }, "Moe's City Bounce Rentals"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    class: "text-center fs-2"
+    className: "text-center fs-2"
   }, "About Us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    class: "text-center fst-italic fs-5"
-  }, "Moe's City Bounce Rentals is a family-owned business. We have been", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "in business since 2010. We rent bounce houses for all of your needs."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Cards__WEBPACK_IMPORTED_MODULE_2__.Cards, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", {
-    class: "botsig fs-5"
+    className: "text-center fst-italic fs-5"
+  }, "Moe's City Bounce Rentals is a family-owned business. We have been", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "in business since 2010. We rent bounce houses for all of your needs."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", {
+    className: "botsig fs-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     style: "color: black"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", null, "Website by me"))));
-}
-
-/***/ }),
-
-/***/ "./src/Views/Cards.js":
-/*!****************************!*\
-  !*** ./src/Views/Cards.js ***!
-  \****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Cards: () => (/* binding */ Cards)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-function Cards() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, " ", "const card1 = ", "{", "}", "; card1.src = \"../assets/images/katapeed.jpg\"; card1.title = \"Katapeed\"; card1.description = \"Katapeed is a classic, fun for everyone, not safe for anyone obstacle course.\"; const card2 = ", "{", "}", "; card2.src = \"../assets/images/peek-a-poo.jpg\"; card2.title = \"Peek-a-poo\"; card2.description = \"Another classic which comes with a net to trap the mosquitos inside, nowhere to hide.\"; const card3 = ", "{", "}", "; card3.src = \"../assets/images/bounce-around.jpg\"; card3.title = \"Bounce Around\"; card3.description = \"Bounce around in a circle or see who can make it to the middle first, you decide. If this doesn't bore you, you can always go back to the beginning.\"; const card4 = ", "{", "}", "; card4.src = \"../assets/images/bump-n-jump.jpg\"; card4.title = \"Bump N Jump\"; card4.description = \"Bump and jump around in a circle or see who...NOPE. You can always go back to the beginning.\"; const card5 = ", "{", "}", "; card5.src = \"../assets/images/unknown.jpg\"; card5.title = \"N/A\"; card5.description = \"N/A. You can always go back to the beginning.\"; const card6 = ", "{", "}", "; card6.src = \"../assets/images/gargantuan.jpg\"; card6.title = \"Gargantuan...\"; card6.description = \"Slide up or down. You can always go back to the beginning.\"; const cards = [card1, card2, card3, card4, card5, card6]; for (position = 0; position < cards.length, position++) ", "{", "const card = cards[position]; const cardString = convertCard(card); mainTag.innerHTML += cardString;", "}");
 }
 
 /***/ }),
