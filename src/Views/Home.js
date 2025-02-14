@@ -16,7 +16,7 @@ export function Home() {
 
       <main>
         <article>
-          <h1 class="coninfo">Moe's City Bounce Rentals</h1>
+          <h1 className="coninfo">Moe's City Bounce Rentals</h1>
           <br />
           <h2 id="funjumps">Fun Jumps</h2>
           <p>
@@ -96,7 +96,7 @@ export function Home() {
           </b>
         </p>
 
-        <nav class="opacity75">
+        <nav className="opacity75">
           <b>
             <a href="#funjumps">Fun Jumps</a>
           </b>
@@ -114,7 +114,7 @@ export function Home() {
         <br />
         <hr />
 
-        <p class="botsig fs-5">
+        <p className="botsig fs-5">
           <i>Website by me</i>
         </p>
       </footer>

@@ -1998,6 +1998,64 @@ module.exports.splitCookiesString = splitCookiesString;
 
 /***/ }),
 
+/***/ "./src/Views/About.js":
+/*!****************************!*\
+  !*** ./src/Views/About.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   About: () => (/* binding */ About)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ "./src/Views/Navbar.js");
+/* harmony import */ var _Cards__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Cards */ "./src/Views/Cards.js");
+
+
+
+function About() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    width: "100%",
+    alt: "Bounce House",
+    src: "../assets/images/header-nav.jpg"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__.Navbar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
+    id: "mainTag"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+    class: "coninfo"
+  }, "Moe's City Bounce Rentals"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    class: "text-center fs-2"
+  }, "About Us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    class: "text-center fst-italic fs-5"
+  }, "Moe's City Bounce Rentals is a family-owned business. We have been", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "in business since 2010. We rent bounce houses for all of your needs."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Cards__WEBPACK_IMPORTED_MODULE_2__.Cards, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", {
+    class: "botsig fs-5"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    style: "color: black"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", null, "Website by me"))));
+}
+
+/***/ }),
+
+/***/ "./src/Views/Cards.js":
+/*!****************************!*\
+  !*** ./src/Views/Cards.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Cards: () => (/* binding */ Cards)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function Cards() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, " ", "const card1 = ", "{", "}", "; card1.src = \"../assets/images/katapeed.jpg\"; card1.title = \"Katapeed\"; card1.description = \"Katapeed is a classic, fun for everyone, not safe for anyone obstacle course.\"; const card2 = ", "{", "}", "; card2.src = \"../assets/images/peek-a-poo.jpg\"; card2.title = \"Peek-a-poo\"; card2.description = \"Another classic which comes with a net to trap the mosquitos inside, nowhere to hide.\"; const card3 = ", "{", "}", "; card3.src = \"../assets/images/bounce-around.jpg\"; card3.title = \"Bounce Around\"; card3.description = \"Bounce around in a circle or see who can make it to the middle first, you decide. If this doesn't bore you, you can always go back to the beginning.\"; const card4 = ", "{", "}", "; card4.src = \"../assets/images/bump-n-jump.jpg\"; card4.title = \"Bump N Jump\"; card4.description = \"Bump and jump around in a circle or see who...NOPE. You can always go back to the beginning.\"; const card5 = ", "{", "}", "; card5.src = \"../assets/images/unknown.jpg\"; card5.title = \"N/A\"; card5.description = \"N/A. You can always go back to the beginning.\"; const card6 = ", "{", "}", "; card6.src = \"../assets/images/gargantuan.jpg\"; card6.title = \"Gargantuan...\"; card6.description = \"Slide up or down. You can always go back to the beginning.\"; const cards = [card1, card2, card3, card4, card5, card6]; for (position = 0; position < cards.length, position++) ", "{", "const card = cards[position]; const cardString = convertCard(card); mainTag.innerHTML += cardString;", "}");
+}
+
+/***/ }),
+
 /***/ "./src/Views/Home.js":
 /*!***************************!*\
   !*** ./src/Views/Home.js ***!
@@ -2019,7 +2077,7 @@ function Home() {
     alt: "Bounce House",
     src: "../assets/images/header-nav.jpg"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__.Navbar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    class: "coninfo"
+    className: "coninfo"
   }, "Moe's City Bounce Rentals"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     id: "funjumps"
   }, "Fun Jumps"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Lorem ipsum odor amet, consectetuer adipiscing elit. Varius fermentum varius eros nibh sed, risus lobortis pulvinar. Malesuada rhoncus dapibus nec potenti dapibus. Luctus fringilla ligula venenatis risus mi, turpis sodales. Pretium hendrerit nisi montes nisl diam. Libero torquent urna ultrices eleifend litora velit faucibus. Nullam blandit montes eget tellus congue metus scelerisque. Sodales purus nullam odio montes leo. Lectus maximus vulputate nascetur scelerisque aliquet. Sociosqu integer viverra tellus convallis felis tristique maximus. Quis eleifend netus ad ad; integer natoque eu. Amet vulputate rhoncus quis curae iaculis pretium; curae habitasse molestie. Semper ultricies a luctus conubia dictumst est faucibus. Nullam mauris ultricies sed faucibus auctor donec ornare ipsum. Dui class integer sodales a gravida mus purus lobortis. Faucibus torquent et elementum aliquet pellentesque. Lectus efficitur quam mollis mi ut tellus mauris? Consequat taciti duis est cras mi orci ex nostra. Habitant est bibendum pretium id; erat vivamus id. Egestas class eget phasellus eros parturient volutpat."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
@@ -2027,7 +2085,7 @@ function Home() {
   }, "Water Slides"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Lorem ipsum odor amet, consectetuer adipiscing elit. Ultricies ex ut facilisis adipiscing montes rhoncus fusce torquent phasellus. Efficitur orci risus vivamus nibh luctus, natoque libero. Nascetur duis mauris ornare; lorem porttitor quisque. Quam ultricies conubia gravida sociosqu nascetur ut tristique. Ainceptos tincidunt libero nibh neque. Lectus pulvinar praesent himenaeos, platea iaculis bibendum. Quam phasellus netus placerat commodo donec; tellus amet. Ultricies inceptos torquent semper sem ac. Suscipit mus commodo scelerisque tempus sed fames. Suscipit nec quis nibh dignissim sem. Habitasse risus sapien eleifend mi praesent euismod. Tempus dolor turpis lobortis; pharetra odio conubia. Erat magna turpis accumsan commodo pulvinar senectus donec."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     id: "portable"
   }, "Portable"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Lorem ipsum odor amet, consectetuer adipiscing elit. Donec class blandit accumsan finibus orci felis, cursus justo ipsum. Enim litora urna felis non ultricies. Acubilia taciti ornare eros rhoncus dictum. Morbi luctus cubilia per auctor iaculis porttitor. Ornare montes elementum tortor ultrices laoreet taciti. Eu dictum dis morbi malesuada est adipiscing tincidunt aptent. Dis justo praesent dolor mus viverra dictum. Mollis vulputate volutpat dis tortor enim laoreet primis. Pulvinar diam tellus rhoncus facilisi donec nascetur suscipit. Cubilia porttitor in nisi praesent aliquet interdum venenatis nisl. Aenean blandit eros ad quisque mus scelerisque torquent ac. Vulputate donec imperdiet proin, semper erat nibh eleifend? Nostra nullam efficitur justo himenaeos platea montes orci. Rutrum vulputate duis vivamus; torquent platea nullam ac duis. Aliquam blandit conubia maecenas habitant auctor pulvinar sit. Facilisi mus massa quisque enim vulputate. Ultrices proin pellentesque neque cras molestie felis vehicula sit praesent. Feugiat vehicula laoreet morbi proin ac placerat? Volutpat sociosqu ullamcorper sit mattis condimentum accumsan tristique. Nibh auctor at libero ex ac elit vestibulum. Tellus aliquam mi blandit taciti torquent tristique tincidunt eu. Consequat blandit mi cubilia nec magnis ultricies. Fames hendrerit risus iaculis pellentesque non faucibus.d"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("b", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("u", null, "Sitemap:"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
-    class: "opacity75"
+    className: "opacity75"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("b", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "#funjumps"
   }, "Fun Jumps")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("b", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
@@ -2035,7 +2093,7 @@ function Home() {
   }, "Water Slides")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("b", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "#portable"
   }, "Portable")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    class: "botsig fs-5"
+    className: "botsig fs-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", null, "Website by me"))));
 }
 
@@ -11804,19 +11862,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/dist/development/chunk-IR6S3I6Y.mjs");
+/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/dist/development/chunk-IR6S3I6Y.mjs");
 /* harmony import */ var _Views_Home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Views/Home */ "./src/Views/Home.js");
+/* harmony import */ var _Views_About__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Views/About */ "./src/Views/About.js");
+
 
 
 
 
 const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_0__.createRoot)(window.bodyTag);
-root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.Route, {
+root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_4__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_4__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_4__.Route, {
   path: "/",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_Views_Home__WEBPACK_IMPORTED_MODULE_2__.Home, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_4__.Route, {
   path: "/home",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_Views_Home__WEBPACK_IMPORTED_MODULE_2__.Home, null)
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_4__.Route, {
+  path: "/about",
+  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_Views_About__WEBPACK_IMPORTED_MODULE_3__.About, null)
 }))));
 })();
 
