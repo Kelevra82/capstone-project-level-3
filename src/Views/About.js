@@ -14,7 +14,7 @@ export function About() {
       </header>
       <br />
 
-      <main id="mainTag">
+      <main>
         <h1 className="coninfo">Moe's City Bounce Rentals</h1>
         <br />
         <h2 className="text-center fs-2">About Us</h2>
@@ -72,7 +72,7 @@ export function About() {
       <br />
       <hr />
       <footer className="botsig fs-5">
-        <p style="color: black">
+        <p style={{ color: "black" }}>
           <i>Website by me</i>
         </p>
       </footer>

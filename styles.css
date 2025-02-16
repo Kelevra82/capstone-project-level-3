@@ -18,7 +18,6 @@
 body {
   background-color: rgb(31, 134, 175);
   background-image: linear-gradient(rgb(13, 56, 61), rgb(34, 134, 175), rgb(13, 56, 61));
-  font-family: "Exo2";
   font-size: 25px;
   color: rgb(0, 0, 0);
 }

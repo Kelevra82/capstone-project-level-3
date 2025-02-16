@@ -15,7 +15,7 @@ function handleScheduleCall(event) {
   const time = timeInput.value;
   const datetime = `${date} at ${time}`;
   output(
-    `Thank you ${name} for scheduling a reservation! Phone call scheduled for ${datetime} at ${phone}.<br>`,
+    `Thank you ${name} for scheduling a reservation! Phone call scheduled for ${datetime} at ${phone}.<br />`,
     "scheduleFormTag"
   );
 }
