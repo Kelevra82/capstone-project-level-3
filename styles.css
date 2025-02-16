@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Exo2";
-  src: url("fonts/Exo2-Regular.otf");
+  src: url("./assets/fonts/Exo2-Regular.otf");
 }
 #animate-badge {
   transform: scale(1) rotate(0deg);
