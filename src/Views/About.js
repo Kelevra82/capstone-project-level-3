@@ -14,7 +14,7 @@ export function About() {
       </header>
       <br />
 
-      <main>
+      <main id="mainTag">
         <h1 className="coninfo">Moe's City Bounce Rentals</h1>
         <br />
         <h2 className="text-center fs-2">About Us</h2>
@@ -62,7 +62,7 @@ export function About() {
 
     debugger;
     const cards = [card1, card2, card3, card4, card5, card6];
-    for (position = 0; position < cards.length, position++) {
+    for (position = 0; position < cards.length; position++) {
       const card = cards[position];
       const cardString = convertCard(card);
       mainTag.innerHTML += cardString;

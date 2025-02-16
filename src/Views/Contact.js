@@ -1,5 +1,7 @@
 import React from "react";
 import { Navbar } from "./Navbar";
+import { handleSubmit } from "../controllers/handleSubmit";
+import { handleScheduleCall } from "../controllers/handleScheduleCall";
 
 export function Contact() {
   return (
@@ -37,7 +39,7 @@ export function Contact() {
           <div className="row">
             <div className="col">
               <div>
-                <form onsubmit="handleSubmit(event)" className="d-inline-block">
+                <form onSubmit={handleSubmit} className="d-inline-block">
                   <ul className="list-group m-5 p-5 fs-5">
                     <li className="container list-group-item text-primary bg-dark border-dashed border-dark">
                       <label for="name">Name:</label>
@@ -49,7 +51,7 @@ export function Contact() {
                         type="text"
                         name="name"
                         id="name"
-                        placeholder="Enter your name"
+                        placeHolder="Enter your name"
                       />
                       <br />
                     </li>
@@ -62,7 +64,7 @@ export function Contact() {
                         required
                         type="email"
                         id="email"
-                        placeholder="example@email.com"
+                        placeHolder="example@email.com"
                       />
                       <br />
                     </li>
@@ -95,7 +97,7 @@ export function Contact() {
                 </form>
               </div>
 
-              <form onsubmit="handleScheduleCall(event)">
+              <form onSubmit={handleScheduleCall}>
                 <ul className="list-group m-5 p-5 fs-5">
                   <li className="container list-group-item text-primary bg-dark border-dashed border-dark">
                     <label for="name">Name:</label>
@@ -107,7 +109,7 @@ export function Contact() {
                       type="text"
                       id="name"
                       name="name"
-                      placeholder="Enter your name"
+                      placeHolder="Enter your name"
                       className="text-center"
                     />
                     <br />
@@ -122,7 +124,7 @@ export function Contact() {
                       type="tel"
                       id="phone"
                       name="phone"
-                      placeholder="###-###-####"
+                      placeHolder="###-###-####"
                       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                       className="text-center"
                     />
@@ -183,8 +185,8 @@ export function Contact() {
               <h3>Reserve Now</h3>
               <img
                 className="card-img"
-                src="images\select-state.png"
-                usemap="#image-map"
+                src="../assets/images/select-state.png"
+                useMap="#image-map"
                 alt="Choose Your State"
               />
               <map name="image-map">

@@ -2018,7 +2018,9 @@ function About() {
     width: "100%",
     alt: "Bounce House",
     src: "../assets/images/header-nav.jpg"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__.Navbar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__.Navbar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
+    id: "mainTag"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
     className: "coninfo"
   }, "Moe's City Bounce Rentals"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-center fs-2"
@@ -2048,6 +2050,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ "./src/Views/Navbar.js");
+/* harmony import */ var _controllers_handleSubmit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/handleSubmit */ "./src/controllers/handleSubmit.js");
+/* harmony import */ var _controllers_handleScheduleCall__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../controllers/handleScheduleCall */ "./src/controllers/handleScheduleCall.js");
+
+
 
 
 function Contact() {
@@ -2078,7 +2084,7 @@ function Contact() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
-    onsubmit: "handleSubmit(event)",
+    onSubmit: _controllers_handleSubmit__WEBPACK_IMPORTED_MODULE_2__.handleSubmit,
     className: "d-inline-block"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
     className: "list-group m-5 p-5 fs-5"
@@ -2093,7 +2099,7 @@ function Contact() {
     type: "text",
     name: "name",
     id: "name",
-    placeholder: "Enter your name"
+    placeHolder: "Enter your name"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "container list-group-item text-primary bg-dark border-dashed border-dark"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
@@ -2104,7 +2110,7 @@ function Contact() {
     required: true,
     type: "email",
     id: "email",
-    placeholder: "example@email.com"
+    placeHolder: "example@email.com"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "container list-group-item text-primary bg-dark border-dashed border-dark"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
@@ -2126,7 +2132,7 @@ function Contact() {
     id: "emailFormProcessedTag",
     className: "list-group-item text-primary bg-dark border-dark"
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
-    onsubmit: "handleScheduleCall(event)"
+    onSubmit: _controllers_handleScheduleCall__WEBPACK_IMPORTED_MODULE_3__.handleScheduleCall
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
     className: "list-group m-5 p-5 fs-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
@@ -2140,7 +2146,7 @@ function Contact() {
     type: "text",
     id: "name",
     name: "name",
-    placeholder: "Enter your name",
+    placeHolder: "Enter your name",
     className: "text-center"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "container list-group-item text-primary bg-dark border-dashed border-dark"
@@ -2153,7 +2159,7 @@ function Contact() {
     type: "tel",
     id: "phone",
     name: "phone",
-    placeholder: "###-###-####",
+    placeHolder: "###-###-####",
     pattern: "[0-9]{3}-[0-9]{3}-[0-9]{4}",
     className: "text-center"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
@@ -2200,8 +2206,8 @@ function Contact() {
     className: "container list-group-item text-primary bg-dark border-dashed border-dark"
   }, "9qHg8@example.com")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Reserve Now"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     className: "card-img",
-    src: "images\\select-state.png",
-    usemap: "#image-map",
+    src: "../assets/images/select-state.png",
+    useMap: "#image-map",
     alt: "Choose Your State"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("map", {
     name: "image-map"
@@ -2305,7 +2311,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function Navbar() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
-    class: "nav nav-pills nav-fill bg-dark"
+    className: "nav nav-pills nav-fill bg-dark"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/home"
   }, "Home |"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
@@ -2313,6 +2319,130 @@ function Navbar() {
   }, "About | "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/contact"
   }, "Contact"));
+}
+
+/***/ }),
+
+/***/ "./src/controllers/handleScheduleCall.js":
+/*!***********************************************!*\
+  !*** ./src/controllers/handleScheduleCall.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   handleScheduleCall: () => (/* binding */ handleScheduleCall)
+/* harmony export */ });
+/* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/output.js */ "./src/utils/output.js");
+
+window.handleScheduleCall = handleScheduleCall;
+function handleScheduleCall(event = new Event()) {
+  event.preventDefault();
+  const form = event.target;
+  const nameInput = form[0];
+  const phoneInput = form[1];
+  const dateInput = form[2];
+  const timeInput = form[3];
+  const name = nameInput.value;
+  const phone = phoneInput.value;
+  const date = dateInput.value;
+  const time = timeInput.value;
+  const datetime = `${date} at ${time}`;
+  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(`Thank you ${name} for scheduling a reservation! Phone call scheduled for ${datetime} at ${phone}.<br />`, "scheduleFormTag");
+}
+
+/***/ }),
+
+/***/ "./src/controllers/handleSubmit.js":
+/*!*****************************************!*\
+  !*** ./src/controllers/handleSubmit.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   handleSubmit: () => (/* binding */ handleSubmit)
+/* harmony export */ });
+/* harmony import */ var _modules_getServerResponse_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/getServerResponse.js */ "./src/modules/getServerResponse.js");
+/* harmony import */ var _modules_parseResponse_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/parseResponse.js */ "./src/modules/parseResponse.js");
+/* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/output.js */ "./src/utils/output.js");
+
+
+
+window.handleSubmit = handleSubmit;
+function handleSubmit(event = new Event()) {
+  debugger;
+  event.preventDefault();
+  const inputs = event.target;
+  const nameInput = inputs[0];
+  const emailInput = inputs[1];
+  const name = nameInput.value;
+  const email = emailInput.value;
+  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_2__.output)(`Please wait while we process your request with Name: ${name} and Email: ${email} ...`, "emailFormProcessingTag");
+  const promise = new Promise(_modules_getServerResponse_js__WEBPACK_IMPORTED_MODULE_0__.getServerResponse);
+  promise.then(_modules_parseResponse_js__WEBPACK_IMPORTED_MODULE_1__.parseResponse);
+}
+
+/***/ }),
+
+/***/ "./src/modules/getServerResponse.js":
+/*!******************************************!*\
+  !*** ./src/modules/getServerResponse.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   getServerResponse: () => (/* binding */ getServerResponse)
+/* harmony export */ });
+function getServerResponse(resolve) {
+  setTimeout(activateResolve, 5000);
+  function activateResolve() {
+    debugger;
+    //SIMULATE A SERVER RESPONSE BY SENDING A STRINGIFIED OBJECT
+    const response = {
+      message: "Successfully processed."
+    };
+    const resolveValue = JSON.stringify(response);
+    resolve(resolveValue);
+  }
+}
+
+/***/ }),
+
+/***/ "./src/modules/parseResponse.js":
+/*!**************************************!*\
+  !*** ./src/modules/parseResponse.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   parseResponse: () => (/* binding */ parseResponse)
+/* harmony export */ });
+/* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/output.js */ "./src/utils/output.js");
+
+function parseResponse(resolveValue) {
+  const response = JSON.parse(resolveValue);
+  const message = response.message;
+  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(message, "emailFormProcessedTag");
+}
+
+/***/ }),
+
+/***/ "./src/utils/output.js":
+/*!*****************************!*\
+  !*** ./src/utils/output.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   output: () => (/* binding */ output)
+/* harmony export */ });
+function output(message = "", outputTag = "outputTag", shouldAppend = true) {
+  debugger;
+  if (shouldAppend) window[outputTag].innerHTML += message;else window[outputTag].innerHTML = message;
 }
 
 /***/ }),

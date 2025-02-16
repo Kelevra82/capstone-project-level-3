@@ -2,7 +2,7 @@ import { output } from "../utils/output.js";
 
 window.handleScheduleCall = handleScheduleCall;
 
-function handleScheduleCall(event) {
+export function handleScheduleCall(event = new Event()) {
   event.preventDefault();
   const form = event.target;
   const nameInput = form[0];

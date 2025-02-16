@@ -3,7 +3,7 @@ import { parseResponse } from "../modules/parseResponse.js";
 import { output } from "../utils/output.js";
 
 window.handleSubmit = handleSubmit;
-function handleSubmit(event) {
+export function handleSubmit(event = new Event()) {
   debugger;
   event.preventDefault();
   const inputs = event.target;

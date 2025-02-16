@@ -24,7 +24,7 @@ export function Cards() {
       {"}"}; card6.src = "../assets/images/gargantuan.jpg"; card6.title =
       "Gargantuan..."; card6.description = "Slide up or down. You can always go
       back to the beginning."; const cards = [card1, card2, card3, card4, card5,
-      card6]; for (position = 0; position &lt; cards.length, position++) {"{"}
+      card6]; for (position = 0; position &lt; cards.length; position++) {"{"}
       const card = cards[position]; const cardString = convertCard(card);
       mainTag.innerHTML += cardString;
       {"}"}
