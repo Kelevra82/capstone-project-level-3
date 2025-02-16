@@ -42,7 +42,7 @@ export function Contact() {
                 <form onSubmit={handleSubmit} className="d-inline-block">
                   <ul className="list-group m-5 p-5 fs-5">
                     <li className="container list-group-item text-primary bg-dark border-dashed border-dark">
-                      <label for="name">Name:</label>
+                      <label htmlFor="name">Name:</label>
                       <br />
                     </li>
                     <li className="container list-group-item text-primary bg-dark border-dashed border-dark">
@@ -51,12 +51,12 @@ export function Contact() {
                         type="text"
                         name="name"
                         id="name"
-                        placeHolder="Enter your name"
+                        placeholder="Enter your name"
                       />
                       <br />
                     </li>
                     <li className="container list-group-item text-primary bg-dark border-dashed border-dark">
-                      <label for="email">Email:</label>
+                      <label htmlFor="email">Email:</label>
                       <br />
                     </li>
                     <li className="container list-group-item text-primary bg-dark border-dashed border-dark">
@@ -64,12 +64,12 @@ export function Contact() {
                         required
                         type="email"
                         id="email"
-                        placeHolder="example@email.com"
+                        placeholder="example@email.com"
                       />
                       <br />
                     </li>
                     <li className="container list-group-item text-primary bg-dark border-dashed border-dark">
-                      <label for="comments">Comments:</label>
+                      <label htmlFor="comments">Comments:</label>
                       <br />
                     </li>
                     <li className="container list-group-item text-primary bg-dark border-dashed border-dark">
@@ -100,7 +100,7 @@ export function Contact() {
               <form onSubmit={handleScheduleCall}>
                 <ul className="list-group m-5 p-5 fs-5">
                   <li className="container list-group-item text-primary bg-dark border-dashed border-dark">
-                    <label for="name">Name:</label>
+                    <label htmlFor="name">Name:</label>
                     <br />
                   </li>
                   <li className="container list-group-item text-primary bg-dark border-dashed border-dark">
@@ -109,13 +109,13 @@ export function Contact() {
                       type="text"
                       id="name"
                       name="name"
-                      placeHolder="Enter your name"
+                      placeholder="Enter your name"
                       className="text-center"
                     />
                     <br />
                   </li>
                   <li className="container list-group-item text-primary bg-dark border-dashed border-dark">
-                    <label for="phone">Phone #:</label>
+                    <label htmlFor="phone">Phone #:</label>
                     <br />
                   </li>
                   <li className="container list-group-item text-primary bg-dark border-dashed border-dark">
@@ -124,14 +124,14 @@ export function Contact() {
                       type="tel"
                       id="phone"
                       name="phone"
-                      placeHolder="###-###-####"
+                      placeholder="###-###-####"
                       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                       className="text-center"
                     />
                     <br />
                   </li>
                   <li className="container list-group-item text-primary bg-dark border-dashed border-dark">
-                    <label for="date">Date:</label>
+                    <label htmlFor="date">Date:</label>
                     <br />
                   </li>
                   <li className="container list-group-item text-primary bg-dark border-dashed border-dark">
@@ -145,7 +145,7 @@ export function Contact() {
                     <br />
                   </li>
                   <li className="container list-group-item text-primary bg-dark border-dashed border-dark">
-                    <label for="time">Time:</label>
+                    <label htmlFor="time">Time:</label>
                     <br />
                   </li>
                   <li className="container list-group-item text-primary bg-dark border-dashed border-dark">
@@ -217,15 +217,15 @@ export function Contact() {
         <form>
           <p>Rate us!</p>
           <input id="1star" type="radio" name="stars" />
-          <label for="1star" className="ps-2 pe-2">
+          <label htmlFor="1star" className="ps-2 pe-2">
             1 star
           </label>
           <input id="2stars" type="radio" name="stars" />
-          <label for="2stars" className="ps-2 pe-2">
+          <label htmlFor="2stars" className="ps-2 pe-2">
             2 stars
           </label>
           <input id="3stars" type="radio" name="stars" />
-          <label for="3stars" className="ps-2 pe-2">
+          <label htmlFor="3stars" className="ps-2 pe-2">
             3 stars
           </label>
         </form>
