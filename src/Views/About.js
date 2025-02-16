@@ -1,15 +1,12 @@
 import React from "react";
 import { Navbar } from "./Navbar";
+import { Banner } from "./Banner";
 
 export function About() {
   return (
     <>
       <header>
-        <img
-          width="100%"
-          alt="Bounce House"
-          src="../assets/images/header-nav.jpg"
-        />
+        <Banner />
         <Navbar />
       </header>
       <br />
